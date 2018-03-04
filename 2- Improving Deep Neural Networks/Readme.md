@@ -539,9 +539,9 @@ Here are the course summary as its given on the course [link](https://www.course
 
 ### The problem of local optima
 
-- The normal local optima is not likely to appear in a deep neural network.
+- The normal local optima is not likely to appear in a deep neural network becuase it requries all dimensions to be convex.
 - You are unlikely to get stuck in a bad local optima in high dimensions.
-- Plateaus can make learning slow.
+- Plateaus can make learning slow (saddle points, some dimensions convex, some dimensions concave).
   - Plateaus is an area of fairly level high ground.
   - This is where algorithms like momentum and Adam helps.
 
