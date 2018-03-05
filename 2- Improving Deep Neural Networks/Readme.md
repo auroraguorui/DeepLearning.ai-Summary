@@ -586,6 +586,7 @@ Here are the course summary as its given on the course [link](https://www.course
   - You should scale this to `1-Beta = 0.001 to 0.1` and the use `a = 0.001` and `b = 0.1`
   - And remember to subtract 1 from the resulted random value.
   - Beta from .9000 to .9005 in momentum is averaging both around 10 previous derivatives, but beta from .999 to .9995 is averaging 1000 and 2000 derivatives respectively. That's why we need to do this kind of sampling (1-10^r)
+  - The closer beta is close to 1, more sensitive because it's averaging 1/(1-beta) previous examples.
 
 ### Hyperparameters tuning in practice: Pandas vs. Caviar 
 
