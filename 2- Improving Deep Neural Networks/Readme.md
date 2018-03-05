@@ -585,6 +585,7 @@ Here are the course summary as its given on the course [link](https://www.course
   - Beta best range is from 0.9 to 0.999
   - You should scale this to `1-Beta = 0.001 to 0.1` and the use `a = 0.001` and `b = 0.1`
   - And remember to subtract 1 from the resulted random value.
+  - Beta from .9000 to .9005 in momentum is averaging both around 10 previous derivatives, but beta from .999 to .9995 is averaging 1000 and 2000 derivatives respectively. That's why we need to do this kind of sampling (1-10^r)
 
 ### Hyperparameters tuning in practice: Pandas vs. Caviar 
 
