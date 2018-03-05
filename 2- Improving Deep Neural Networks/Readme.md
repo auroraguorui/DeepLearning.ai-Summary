@@ -638,10 +638,10 @@ Here are the course summary as its given on the course [link](https://www.course
 ### Why does Batch normalization work
 
 - The first reason is the same reason as why we normalize X.
-- The second reason is that batch normalization reduces the problem of input values changing.
+- The second reason is that batch normalization reduces the problem of input values changing. It makes weights later or deeper in the NN more robust to changes to weights in earlier layers of the NN. It can learn on shifting input distribution (called covariate shift). It reduces the shift of hidden layers (Even the values changes, mean and variance won't). It makes each layer more independent.
 - Batch norm does some regularization:
-  - Each mini batch is scaled by the mean/variance computed of that mini batch.
-  - -This adds some noise to the values `Z[l]` within that mini batch. Similar to dropout it adds some noise to each hidden layer activation
+  - Each mini batch is scaled by the mean/variance computed of that mini batch instead of the whole batch.
+  - -This adds some noise to the values `Z[l]` within that mini batch, because mean/variance is noisy. Similar to dropout it adds some noise to each hidden layer activation
   - This has a slight regularization effect.
 - To reduce this regularization effect you can make your mini batch bigger.
 - If you need regularization you cant just relay on that slight regularization you'll need to add your regularization (L2 or dropout)
