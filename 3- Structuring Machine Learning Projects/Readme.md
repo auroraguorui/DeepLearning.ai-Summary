@@ -203,7 +203,9 @@ Here are the course summary as its given on the course [link](https://www.course
 - In some problems, deep learning has surpassed human level performance. Like:
   - Online advertising.
   - Product recommendation.
+  - Logistics (transit time)
   - Loan approval.
+- They have database to support for.
 - The last examples are non natural perception task. Humans are far better in natural perception task like computer vision and speech recognition.
 - Its harder for machines to surpass human level in natural perception task.
 
@@ -219,7 +221,7 @@ Here are the course summary as its given on the course [link](https://www.course
      - Bigger training data.
   4. If number 2 difference is large you have these options:
      - Get more training data.
-     - Regularization.
+     - Regularization (l1,l2, dropout, data augmentation).
      - NN architecture/hyperparameters search.
 
 
